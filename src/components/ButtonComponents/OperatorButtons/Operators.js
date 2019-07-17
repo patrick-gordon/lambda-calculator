@@ -8,15 +8,7 @@ import {operators} from '../../../data';
 
 const Operators = () => {
   // STEP 2 - add the imported data to state
-  const [operatorState, setOperatorState] = useState(operators)
-  return (
-    <div>
-       {operatorState.map(operator => {
-         return(
-         <OperatorButton operator={operator} />
-       )})}
-    </div>
-  );
+  return operators.map(op => <OperatorButton operator={op} />)
 };
 
 export default Operators

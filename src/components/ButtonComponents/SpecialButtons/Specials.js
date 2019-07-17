@@ -12,9 +12,9 @@ const Specials = () => {
 
   return (
     <div>
-       {specialState.map(special => {
+       {specials.map(spec => {
          return(
-         <SpecialButtons special={special} />
+         <SpecialButtons special={spec} />
        )})}
     </div>
   );
